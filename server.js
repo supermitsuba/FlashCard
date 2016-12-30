@@ -33,8 +33,6 @@ app.post("/csv", function(req, res){
    http.get(url, function(response) {
       response.pipe(csvstream)
             .on('data', function(data){
-              
-              console.log('Question: %s Answers: %s', data.question, data.answer)
               result.push(data)
             })
             .on('end', function(){
