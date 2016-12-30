@@ -4,7 +4,7 @@
 // by default, you've got jQuery,
 // add other scripts at the bottom of index.html
 var cache = null
-var index = 0;
+var index = 0
 
 $(function() {
   var url = localStorage.getItem("url")
@@ -37,7 +37,18 @@ $(function() {
   $('#next').click(function(){
     displayCards()
   })
+  
+  $('#reset').click(reset)
 });
+
+function reset(){
+  var result = confirm('Are you sure you want to clear your cache?')
+  if(result){
+    cache = null
+    localStorage.setItem("cache", null)
+    localStorage.setItem("url", '')
+  }
+}
 
 function populateFirstCard(){
     cache = shuffle(cache);

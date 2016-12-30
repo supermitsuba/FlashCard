@@ -27,6 +27,11 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
+// http://expressjs.com/en/starter/basic-routing.html
+app.get("/manifest", function (request, response) {
+  response.sendFile(__dirname + '/cards.manifest');
+});
+
 app.post("/csv", function(req, res){
   var url = req.body.url
   var result = []
