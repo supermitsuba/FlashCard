@@ -1,25 +1,24 @@
-Welcome to the HyperDev BETA
+Flash Card project
 ============================
 
-Click `"Show"` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-HyperDev is a developer playground that lets you code a real web-app without the slow setup and deployment steps. 
+In order to study, I wanted to create a flash card app.  What I didnt want to do was load a server in the cloud.  Thats where gomix comes in, they allow you to host your prototype site for free.  Pretty cool. 
 
 
-Your Project
-------------
+Features
+--------
 
 On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env`
+- npm install
+- set port number for the environment
+- node server.js
+- visit url
 
 On the front-end,
-- edit `client.js`, `style.css` and `index.html`
-- drag in `assets`, like images or music, to add them to your project
+- Five it a url to a csv file.  
+   - The file must have 2 columns, question and answer
+- Everything is saved locally, so you can use flash cards online and offline
+- This all will be saved to the localstorage of the browser.
+- If you want to wipe out your data, just click the big red reset button
+- If that doesnt work, clear your browser cache
+- have fun
 
-
-Made by Fog Creek
------------------
-
-\ ゜o゜)ノ
